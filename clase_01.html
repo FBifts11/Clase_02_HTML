@@ -1,0 +1,177 @@
+<!DOCTYPE html> <!--Indica al explorador que el documento es HTML5-->
+<html lang="en"> <!-- HTML es la etiqueta principal que engloba al resto de las etiquetas,
+                    el atributo lang define el tipo de lenguaje-->
+
+<head> <!-- Es la cabeza del documento que contiene los metadatos de la pagina web-->
+    <meta charset="UTF-8"> <!-- Indica al navegador que tipo de caracteres contiene la pagina "UTF-8"
+                            es un tipo de codificacio que tiene la gran mayoria
+                            de caracteres en la gran mayoria de idiomas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Metadata-->
+    <title>Clase_02_HTML</title> <!-- Muestra el titulo de la pagina, aparece en la solapa
+                            del navegador-->>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!--Esta eriqueta se utiliza para agregar el favicon-->
+</head>
+
+<body> <!-- Es el cuerpo del documento donde va a estar todo el contenido que queremos mostrar-->
+    <h1 id="h1">¡Hola Mundo! (Esto es un h1)</h1> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <h2>Esto es un H2</h2> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <h3>Esto es un H3</h3> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <h4>Esto es un H4</h4> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <h5>Esto es un H5</h5> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <h6>Esto es un H6</h6> <!-- Etiqueta de Heading sirve para crear títulos-->
+
+    <p>Este es un parrafo.
+        Puedo cambiar de linea pero en la página no se va a ver
+    </p>
+
+    <p>Este es un parrafo.</p>
+
+    <p>Este es otro parrafo</p>
+
+    <hr> <!-- Agrega una línea horizontal con un salto de linea-->
+
+    <h2>Esto es un subtitulo</h2>
+
+    <p>Este es un parrafo que corresponde al subtitulo anterior</p>
+
+    <!-- Esta es una etiqueta de comentario que no se muestra en el explorador
+    para poder ver los comentarios es necesario ingresar en "inspeccionar" o apretado f12 en el navegador-->
+
+    <p>En este parrafo queremos señalar <span style="color:cyan">un grupo de palabras</span> en particular
+        para poder agregarle algun atributo</p> <!-- span sirve para referenciar texto o parte de él -->
+
+    <p title="Este es un parrafo con un salto de linea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+        aliquam,
+        consequuntur,<br> voluptatum tenetur
+        tempore omnis molestias ipsa eos incidunt reiciendis similique earum aut sint? Corrupti!</p>
+
+    <a href="www.google.com">Este vinculo no funciona</a> <br><br><br> <!-- Anchor sirve para navegar a otras paginas
+                                                                        o navegar dentro de nuestra propia página. -->
+
+    <a href="https://www.google.com" target="_blank">Este vinculo me lleva a Google</a> <br><br><br>
+
+    <a href="mailto:direccion1@mail.com; direccion2@mail.com">Enviar correo a dos destinatarios</a><br><br><br><!-- Mailto puede contener una
+                                                                                                                o mas direcciones de correo
+                                                                                                                de destinatario. -->
+
+    <a href="mailto:direccion@mail.com; direccion2@mail.com?cc=direccionCC@mail.com;
+      direccionCC02@mail.com&bcc=direccionBCC@mail.com&subject=Aca%20va%20el%20asunto&body=Este%20es%20el%20cuerpo%20del%20mensaje">
+        Enviar mail completo
+    </a> <!-- También se puede asigar como valor destinatario , cc y bcc.
+            Además de indicar Subjet y Body. -->
+
+    <br><br><br>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.pngE"
+        width="200" title="Aca NO se puede ver el logo de HTML" alt="Logo de HTML" />
+    <br><br><br><!-- La etiqueta img se utiliza para mostrar imagenes, en el caso anterior la ruta está mal escrita, y esa es la razón por la que no se ve-->
+
+    <img src="./img/logo_html.png" title="Aca se puede ver el logo de HTML" alt="Logo HTML" width="200">
+
+    <img src="./img/logo_css.png" alt="Logo CSS" width="200">
+
+    <figure> <!-- Permite almacenar una imagen en su interior.-->
+        <img src="./img/logo_js.png" alt="Logo JS" width="120">
+        <figcaption>Este es el logo de JS</figcaption>
+    </figure>
+
+    <a href="https://code.visualstudio.com/" target="_blank"><img src="./img/logo_vsc.png" alt="Logo HTML"
+            width="200"></a> <br>
+
+    <h3 id="lista">Listas</h3>
+    <h4>Listas desordenadas</h4>
+    <ul><!--ul sirve para crear listas desordenadas-->
+        <li><a href="#lista">Listas</a></li><!--Cada item de la lista debe ir envuelto en la etiqueta li-->
+        <li><a href="#tabla">Tablas</a></li>
+        <li><a href="#iframe">Iframes</a></li>
+    </ul><br><br>
+
+    <h4>Listas ordenadas</h4>
+    <ol><!--ol sirve para crear listas ordenadas-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul><!--se pueden anidar listas-->
+            <li>Item 2.a</li>
+            <li>Item 2.b</li>
+            <ol type="a" start="6"><!--type indica el tipo de tag que tiene cada item, start indica desde donde empiezan
+            los tags-->
+                <li>Item 2.b.1</li>
+                <li>Item 2.b.2</li>
+                <li>Item 2.b.3</li>
+            </ol>
+            <li>Item 2.c</li>
+        </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h4>Definition list</h4>
+    <dl><!--dl sirve para hacer una lista de definicion-->
+        <dt>Perro</dt><!--dt representa cada termino de la lista-->
+        <dd>Tiene patas</dd><!--dd representan las definiciones de cada termino-->
+        <dd>Consume alimento</dd>
+        <dt>Auto</dt>
+        <dd>Tiene ruedas</dd>
+        <dd>Consume combustible</dd>
+    </dl>
+    <a class="volver" href="#h1">Volver arriba</a>
+
+
+
+    <h3 id="tabla">Tablas</h3>
+    <table border="1"><!-- Table se utiliza para armar una tabla-->
+        <tr><!--tr se utiliza para crear una fila de la tabla-->
+            <th>Header 1</th><!--th indica el encabezado de la tabla. En la primera fila suele ir el encabezado-->
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>data row 1-col 1</td><!--td indica las celdas de la tabla-->
+            <td>data row 1-col 2</td>
+            <td rowspan="2">data row 1 y 2 - col 3</td><!--rowspan indica la combinacion vertical de celdas-->
+        </tr>
+        <tr>
+            <td colspan="2">data row 2 - col 1 y 2</td><!--colspan indica la combinacion horizontal de celdas-->
+            <!-- <td>dato r2-c2</td> Esta td esta comentada porque la celda esta combinada con la de la fila anterior
+            <td>dato r2-c3</td> -->
+        </tr>
+        <tr>
+            <td>data row 3 - col 1</td>
+            <td rowspan="4" colspan="3">data row 3 y 4 - col 2 y 3</td>
+            <!--rowspan y colspan se pueden utilizar juntas-->
+            <!-- <td>dato r3-c3</td> Esta td esta comentada porque la celda esta combinada con la de la fila anterior -->
+        </tr>
+        <tr>
+            <td>data row 4 - col 1</td>
+        </tr>
+
+    </table>
+
+    <h3 id="iframe">Iframes</h3><!--Los iframes son elementos que permiten insertar documentos html dentro de otros
+    documentos html-->
+
+    <ul><!--la lista se vincula con el iframe a traves del target y el name-->
+        <li><a target="ventana"
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.474875091712!2d-58.43007564451571!3d-34.639074362679466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb68f8b07b3%3A0x2e5ea98fbc3275a1!2sIFTS%20N%C2%B011!5e0!3m2!1ses-419!2sar!4v1712077865968!5m2!1ses-419!2sar">
+                Map IFTS 11</a></li>
+        <li><a target="ventana" href="https://www.ifts11.com/wp/#page-content">Web IFTS 11</a></li>
+        <li><a target="ventana"
+                href="https://guarani-autogestionagencia.bue.edu.ar/acceso/login?ref=https://guarani-autogestionagencia.bue.edu.ar/inicio_alumno">SIU
+                Guarani</a></li>
+    </ul>
+
+    <iframe name="ventana" id="ventana"
+        src="https://guarani-autogestionagencia.bue.edu.ar/acceso/login?ref=https://guarani-autogestionagencia.bue.edu.ar/inicio_alumno"
+        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+    <a class="volver" href="#h1">Volver arriba</a>
+</body>
+
+</html>
